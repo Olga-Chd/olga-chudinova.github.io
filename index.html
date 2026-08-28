@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ольга Чудинова — Менеджер сайта / Digital-маркетолог</title>
+  <meta name="description" content="Ольга Чудинова — Менеджер сайта и Digital-маркетолог. 5+ лет в IT. Сайты, контент, SEO, аналитика, продуктовый маркетинг." />
+  <meta name="author" content="Ольга Чудинова" />
+  <meta name="theme-color" content="#0b1120" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://chudinova.github.io/portfolio/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ольга Чудинова — Менеджер сайта / Digital-маркетолог" />
+  <meta property="og:description" content="5+ лет в IT. Сайты, контент, SEO, аналитика, продуктовый маркетинг." />
+  <meta property="og:image" content="assets/olga-photo.jpg" />
+  <meta property="og:locale" content="ru_RU" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ольга Чудинова — Менеджер сайта / Digital-маркетолог" />
+  <meta name="twitter:description" content="5+ лет в IT. Сайты, контент, SEO, аналитика, продуктовый маркетинг." />
+  <meta name="twitter:image" content="assets/olga-photo.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a href="#hero" class="skip-link">Перейти к содержимому</a>
+
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__brand" aria-label="Ольга Чудинова">
+        <span class="nav__brand-mark">ОЧ</span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about" class="nav__link">Обо мне</a>
+        <a href="#cases" class="nav__link">Кейсы</a>
+        <a href="#approach" class="nav__link">Подход</a>
+        <a href="#skills" class="nav__link">Навыки</a>
+        <a href="#contacts" class="nav__link nav__link--cta">Связаться</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__grid">
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal">Менеджер сайта · Digital-маркетолог</p>
+        <h1 class="hero__title reveal">
+          <span class="hero__title-line">Ольга</span>
+          <span class="hero__title-line">Чудинова</span>
+        </h1>
+        <p class="hero__lead reveal">
+          Создаю и развиваю digital-продукты, которые помгают бизнесу решать задачи — от первого клика до запуска продукта. Работаю на стыке digital, маркетинга и продукта. Сегодня мой основной фокус — web-проекты.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#cases" class="btn btn--primary">Смотреть кейсы</a>
+        </div>
+        <div class="hero__stats reveal">
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="5">0</span><span class="hero__stat-plus">+</span>
+            <span class="hero__stat-label">лет в IT</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="15">0</span><span class="hero__stat-plus">+</span>
+            <span class="hero__stat-label">запущенных продуктов</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="2">0</span>
+            <span class="hero__stat-label">года в digital</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual reveal">
+        <div class="hero__photo-frame">
+          <img src="assets/olga-photo.jpg" alt="Ольга Чудинова" class="hero__photo" onerror="this.style.display='none';this.parentElement.classList.add('hero__photo-frame--placeholder')" />
+          <div class="hero__photo-placeholder">
+            <span>Фото</span>
+            <span>заменить в</span>
+            <span class="hero__photo-path">assets/olga-photo.jpg</span>
+          </div>
+          <div class="hero__photo-tag">Ольга Чудинова</div>
+        </div>
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Открыта к предложениям
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Прокрутите вниз</span>
+      <span class="hero__scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__index">01</span>
+        <h2 class="section__title reveal">Обо мне</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p class="about__lead">
+            Создаю и развиваю сайты и лендинги, работаю с контентом и SEO,
+            анализирую поведение пользователей, запускаю новые продукты и
+            выстраиваю digital-инфраструктуру.
+          </p>
+          <p class="about__body">
+            За последние годы я прошла путь от координатора отдела маркетинга
+             до самостоятельного управления digital-направлением
+            в IT-компании.
+          </p>
+        </div>
+        <div class="about__cards reveal">
+          <div class="about__card">
+            <span class="about__card-num">5+</span>
+            <span class="about__card-text">лет в B2B / B2G</span>
+          </div>
+          <div class="about__card">
+            <span class="about__card-num">2+</span>
+            <span class="about__card-text">года работаю с сайтами и лендингами</span>
+          </div>
+          <div class="about__card">
+            <span class="about__card-num">15+</span>
+            <span class="about__card-text">выведенных на рынок продуктов</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What I do -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__index">02</span>
+        <h2 class="section__title reveal">Что я делаю</h2>
+      </div>
+      <div class="services__grid">
+        <article class="service reveal">
+          <span class="service__num">01</span>
+          <h3 class="service__title">Web</h3>
+          <p class="service__sub">Сайты и лендинги: от идеи до запуска</p>
+          <p class="service__desc">Прототипирую страницы, продумываю структуру и пользовательский путь, создаю макеты в Figma, работаю с CMS, Tilda и вайбкодингом.</p>
+        </article>
+        <article class="service reveal">
+          <span class="service__num">02</span>
+          <h3 class="service__title">Контент</h3>
+          <p class="service__sub">Контент, который работает на продукт</p>
+          <p class="service__desc">Создаю и развиваю продуктовые страницы, пишу публикации и контент для digital-каналов, веду SMM.</p>
+        </article>
+        <article class="service reveal">
+          <span class="service__num">03</span>
+          <h3 class="service__title">SEO & Analytics</h3>
+          <p class="service__sub">Принимаю решения на основе данных</p>
+          <p class="service__desc">Работаю с Яндекс.Метрикой, системами мониторинга СМИ, анализирую данные, занимаюсь SEO-продвижением.</p>
+        </article>
+        <article class="service reveal">
+          <span class="service__num">04</span>
+          <h3 class="service__title">Product Marketing</h3>
+          <p class="service__sub">Помогаю выводить продукты на рынок</p>
+          <p class="service__desc">Участвовала в запуске более 15 продуктов: от подготовки продуктового контента и страниц до публикаций и продвижения во внешних каналах.</p>
+        </article>
+        <article class="service service--wide reveal">
+          <span class="service__num">05</span>
+          <h3 class="service__title">Digital маркетинг</h3>
+          <p class="service__sub">Выстраиваю систему, а не отдельные активности</p>
+          <p class="service__desc">Администрирую сайты, работаю с CRM, взаимодействую с подрядчиками, координирую digital-активности и поддерживаю стабильную работу маркетинговой инфраструктуры.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cases -->
+  <section class="section cases" id="cases">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__index">03</span>
+        <h2 class="section__title reveal">Кейсы</h2>
+      </div>
+      <div class="cases__list">
+        <article class="case reveal">
+          <div class="case__head">
+            <span class="case__num">01</span>
+            <h3 class="case__title">Сайты и лендинги</h3>
+          </div>
+          <p class="case__sub">От идеи и прототипа до работающей страницы</p>
+          <p class="case__desc">Разрабатываю структуру лендингов и продуктовых страниц с учетом задач бизнеса.</p>
+          <ul class="case__list">
+            <li>анализирую задачу и целевую аудиторию</li>
+            <li>продумываю структуру страницы</li>
+            <li>создаю прототип в Figma</li>
+            <li>работаю над визуальной подачей</li>
+            <li>администрирую сайт в CMS</li>
+            <li>поддерживаю и обновляю страницы после запуска</li>
+          </ul>
+          <div class="case__tools">
+            <span>Инструменты:</span>
+            <span class="case__tool">Figma</span>
+            <span class="case__tool">Tilda</span>
+            <span class="case__tool">CMS</span>
+            <span class="case__tool">HTML</span>
+            <span class="case__tool">CSS</span>
+          </div>
+        </article>
+
+        <article class="case case--featured reveal">
+          <div class="case__head">
+            <span class="case__num">02</span>
+            <h3 class="case__title">Запуск новых продуктов</h3>
+            <span class="case__badge">Флагманский кейс</span>
+          </div>
+          <p class="case__sub">Более 15 продуктов — от подготовки до выхода на рынок</p>
+          <p class="case__desc">Участвовала в выводе более 15 новых продуктов на рынок в B2B/B2G IT-сегменте. Для каждого запуска обеспечивала комплексную контентную и визуальную поддержку.</p>
+          <div class="case__flow">
+            <span>Продуктовая страница</span>
+            <span class="case__flow-arrow">→</span>
+            <span>email-рассылки</span>
+            <span class="case__flow-arrow">→</span>
+            <span>публикации</span>
+            <span class="case__flow-arrow">→</span>
+            <span>внешние площадки</span>
+            <span class="case__flow-arrow">→</span>
+            <span>digital-каналы</span>
+          </div>
+          <div class="case__callout">
+            <span class="case__callout-label">Результат</span>
+            <p>В результате продукт получает полноценное digital-присутствие.</p>
+          </div>
+        </article>
+
+        <article class="case reveal">
+          <div class="case__head">
+            <span class="case__num">03</span>
+            <h3 class="case__title">SEO и веб-аналитика</h3>
+          </div>
+          <p class="case__sub">Digital-решения на основе данных</p>
+          <p class="case__desc">Работала с SEO-продвижением совместно с агентством: анализировала данные Яндекс.Метрики, ставила задачи, контролировала подготовку текстов под семантическое ядро и корректировала контентную стратегию.</p>
+          <div class="case__approach">
+            <span>Данные</span>
+            <span class="case__approach-arrow">→</span>
+            <span>гипотеза</span>
+            <span class="case__approach-arrow">→</span>
+            <span>изменение</span>
+            <span class="case__approach-arrow">→</span>
+            <span>анализ результата</span>
+            <span class="case__approach-arrow">→</span>
+            <span>следующая итерация</span>
+          </div>
+        </article>
+
+        <article class="case reveal">
+          <div class="case__head">
+            <span class="case__num">04</span>
+            <h3 class="case__title">Digital-контент и вовлечение</h3>
+          </div>
+          <p class="case__sub">Когда контент становится инструментом взаимодействия</p>
+          <p class="case__desc">Выстроила систему регулярного присутствия бренда в digital-каналах: Telegram и новостной блог. Для повышения вовлечения использовала нестандартные механики: геймификация и розыгрыши.</p>
+          <div class="case__mechanics">
+            <span class="case__mechanic">Квизы</span>
+            <span class="case__mechanic">Telegram-бот</span>
+            <span class="case__mechanic">Telegram-игра</span>
+          </div>
+          <div class="case__callout">
+            <span class="case__callout-label">Результат</span>
+            <p>Такие инструменты позволяют не просто рассказать о продукте, а создать дополнительную точку взаимодействия с аудиторией.</p>
+          </div>
+        </article>
+
+        <article class="case case--wide reveal">
+          <div class="case__head">
+            <span class="case__num">05</span>
+            <h3 class="case__title">Маркетинговая инфраструктура</h3>
+          </div>
+          <p class="case__sub">Поддерживаю digital-систему изнутри</p>
+          <p class="case__desc">Помимо создания контента и страниц, занимаюсь операционной частью digital.</p>
+          <div class="case__infra">
+            <ul class="case__list">
+              <li>ежедневный мониторинг работы сайтов</li>
+              <li>администрирование CMS</li>
+              <li>HTML / CSS</li>
+              <li>работа с CRM</li>
+            </ul>
+            <ul class="case__list">
+              <li>связка маркетинга и продаж</li>
+              <li>постановка задач подрядчикам</li>
+              <li>контроль реализации</li>
+              <li>работа с аналитикой</li>
+            </ul>
+          </div>
+          <div class="case__callout">
+            <span class="case__callout-label">Результат</span>
+            <p>Это позволяет мне видеть digital не как набор отдельных задач, а как единую систему.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner__inner reveal">
+        <p class="cta-banner__text">Хотите обсудить, как мой опыт поможет вашему продукту?</p>
+        <a href="#contacts" class="btn btn--primary btn--large">Связаться со мной</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Approach -->
+  <section class="section approach" id="approach">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__index">04</span>
+        <h2 class="section__title reveal">Мой подход</h2>
+      </div>
+      <div class="approach__hero reveal">
+        <p class="approach__statement">
+          Сначала задача.<br />
+          <span class="approach__statement-accent">Потом инструмент.</span>
+        </p>
+      </div>
+      <div class="approach__steps">
+        <div class="approach__step reveal">
+          <span class="approach__step-num">1</span>
+          <h3 class="approach__step-title">Задача бизнеса</h3>
+          <p class="approach__step-desc">Понимаю, какую бизнес-задачу решаем, прежде чем выбирать инструмент.</p>
+        </div>
+        <div class="approach__step reveal">
+          <span class="approach__step-num">2</span>
+          <h3 class="approach__step-title">Данные и гипотеза</h3>
+          <p class="approach__step-desc">Опираюсь на аналитику и метрику, формулирую проверяемую гипотезу.</p>
+        </div>
+        <div class="approach__step reveal">
+          <span class="approach__step-num">3</span>
+          <h3 class="approach__step-title">Реализация</h3>
+          <p class="approach__step-desc">Подбираю подходящий инструмент и реализую решение — от прототипа до запуска.</p>
+        </div>
+        <div class="approach__step reveal">
+          <span class="approach__step-num">4</span>
+          <h3 class="approach__step-title">Анализ и результат</h3>
+          <p class="approach__step-desc">Оцениваю результат, делаю выводы и перехожу к следующей задаче.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__index">05</span>
+        <h2 class="section__title reveal">Навыки</h2>
+      </div>
+      <div class="skills__grid">
+        <div class="skill reveal">
+          <h3 class="skill__title">Web</h3>
+          <div class="skill__tags">
+            <span class="tag">Figma</span>
+            <span class="tag">Tilda</span>
+            <span class="tag">CMS</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Вайбкодинг</span>
+          </div>
+        </div>
+        <div class="skill reveal">
+          <h3 class="skill__title">Analytics & SEO</h3>
+          <div class="skill__tags">
+            <span class="tag">Яндекс.Метрика</span>
+            <span class="tag">SEO-анализ</span>
+            <span class="tag">Скан-Интерфакс/Медиалогия</span>
+          </div>
+        </div>
+        <div class="skill reveal">
+          <h3 class="skill__title">Content & Marketing</h3>
+          <div class="skill__tags">
+            <span class="tag">Telegram</span>
+            <span class="tag">Unisender</span>
+            <span class="tag">CRM</span>
+            <span class="tag">РБК.Компании</span>
+            <span class="tag">Партнеры</span>
+          </div>
+        </div>
+        <div class="skill reveal">
+          <h3 class="skill__title">Design</h3>
+          <div class="skill__tags">
+            <span class="tag">Adobe Photoshop</span>
+            <span class="tag">Illustrator</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Нейросети</span>
+            <span class="tag">Canva</span>
+          </div>
+        </div>
+        <div class="skill skill--wide reveal">
+          <h3 class="skill__title">AI</h3>
+          <div class="skill__tags">
+            <span class="tag">ChatGPT</span>
+            <span class="tag">DALL-E</span>
+            <span class="tag">Nano Banana</span>
+            <span class="tag">Gemini</span>
+            <span class="tag">Perplexity</span>
+            <span class="tag">Gamma</span>
+            <span class="tag">Stitch</span>
+          </div>
+          <p class="skill__note">Использую AI-инструменты не как замену работе специалиста, а как способ ускорять создание контента, анализ и подготовку маркетинговых материалов.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts -->
+  <section class="section contacts" id="contacts">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__index">06</span>
+        <h2 class="section__title reveal">Контакты</h2>
+      </div>
+      <div class="contacts__grid">
+        <div class="contacts__text reveal">
+          <p class="contacts__lead">Открыта к обсуждению предложений.</p>
+          <p class="contacts__body">Если вам нужен специалист, который видит digital как систему и умеет работать на стыке веба, контента, аналитики и продукта — напишите.</p>
+        </div>
+        <div class="contacts__actions reveal">
+          <a href="mailto:olya_chudinova@mail.ru" class="btn btn--primary btn--large contacts__primary-cta">Написать на email</a>
+          <div class="contacts__cards">
+          <a href="mailto:olya_chudinova@mail.ru" class="contact-card">
+            <span class="contact-card__label">Email</span>
+            <span class="contact-card__value">olya_chudinova@mail.ru</span>
+            <span class="contact-card__arrow">→</span>
+          </a>
+          <a href="https://t.me/chd_ol" class="contact-card" target="_blank" rel="noopener">
+            <span class="contact-card__label">Telegram</span>
+            <span class="contact-card__value">@chd_ol</span>
+            <span class="contact-card__arrow">→</span>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__name">Ольга Чудинова</span>
+      <span class="footer__role">Все права защищены</span>
+      <span class="footer__year">© 2026</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
